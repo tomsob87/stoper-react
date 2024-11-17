@@ -1,0 +1,41 @@
+@import '../../styles/settings.scss';
+
+.container {
+    position: fixed;
+    min-width: 400px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .stoper {
+        margin: 0 auto;
+        font-size: 70px;
+    }
+    .buttons {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        .button {
+            flex-basis: 25%;
+            height: 60px;
+            background-color: $color-accent;
+            border: none;
+            border-radius: 8px;
+            color: $color-dark;
+            // padding: 20px 30px;
+            font-size: 20px;
+            transition: .2s;
+            &:hover {
+                box-shadow: 0 0 4px $color-accent;
+            }
+        }
+    }
+}
+
+.active {
+
+}
+
+.inactive {
+    display: none;
+}
